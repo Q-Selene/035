@@ -1,10 +1,10 @@
 n = int(input())
-a = []
-b = []
-c = []
-d = []
-e = []
-o = []
+a = [] #黑桃
+b = [] #紅桃
+c = [] #方塊
+d = [] #梅花
+e = [] #數字
+o = [] #
 j = [0, 9, 10, 11, 12]
 z = [0, 1, 10, 11, 12]
 for _ in range(n):
@@ -14,8 +14,6 @@ for _ in range(n):
         e.append(x)
         sorted(a)
         f = set(a)
-        if
-
         if 1 <= int(i) <= 13:
             a.append(s)
         elif 14 <= int(i) <= 26:
@@ -24,7 +22,8 @@ for _ in range(n):
             c.append(s)
         else:
             d.append(s)
-    if (len(a) >= 5 or len(b) >= 5 or len(c) >= 5 or len(d) >= 5) and ( or j in a):
+
+    if (len(a) >= 5 or len(b) >= 5 or len(c) >= 5 or len(d) >= 5) and ():
         print('7')
     elif a[0] == a[1] == a[2] == a[3] or a[1] == a[2] == a[3] == a[4]:
         print('6')
@@ -32,7 +31,7 @@ for _ in range(n):
         print('5')
     elif k == 'Y' or a == z:
         print('4')
-    elif len(set(a)) == 3 and (a[0] == a[1] == a[2] or a[1] == a[2] == a[3] or a[2] == a[3] == a[4]):
+    elif len(set(a)) == 3 and (a[0] == a[1] == a[2] or a[1] == a[2] == a[3] or a[2] == a[3] == a[4] or a[3] == a[4] == a[5]):
         print('3')
     elif len(set(a)) == 3:
         print('2')
